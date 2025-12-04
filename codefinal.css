@@ -1,0 +1,149 @@
+/* style.css */
+
+
+/* Global layout */
+:root {
+  --accent: #ff1a1a;
+  --bg: #000;
+  --card: #0c0c0c;
+  --muted: #bdbdbd;
+}
+
+
+* { box-sizing: border-box; }
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: #fff;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Content wrapper */
+.content-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+
+/* Title */
+.title {
+  color: var(--accent);
+  font-size: 2.1rem;
+  margin: 6px 0 4px;
+  text-shadow: 0 0 12px rgba(255, 26, 26, 0.47);
+}
+
+
+/* Section card */
+.section-card {
+  background: #111;
+  border: 2px solid #330000;
+  padding: 18px;
+  margin: 28px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 0, 0, 0.06);
+}
+
+
+.section-card h2 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+
+/* Colors */
+.red { color: #ff8080; }
+.blue { color: #66b2ff; }
+
+
+/* Thumbnails */
+.thumb {
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #6b0000;
+  cursor: pointer;
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.12);
+}
+
+
+.caption {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+
+/* Status dots */
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 2px solid #222;
+}
+
+
+.blue-dot { background: #2b8cff; }
+.red-dot { background: #ff3b3b; }
+.green-dot { background: #3bff6a; }
+
+
+/* Map list */
+.map-list {
+  columns: 2;
+  -webkit-columns: 2;
+  column-gap: 24px;
+}
+
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background: var(--accent);
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+
+.button:hover { transform: scale(1.03); }
+
+
+/* Responsive */
+@media (max-width: 800px) {
+  .map-list { columns: 1; }
+  .title { font-size: 1.6rem; }
+}
+
+
+/* Footer */
+footer {
+  border-top: 1px solid #220000;
+  color: var(--muted);
+  margin-top: 24px;
+}
+
+
+.muted {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+
+

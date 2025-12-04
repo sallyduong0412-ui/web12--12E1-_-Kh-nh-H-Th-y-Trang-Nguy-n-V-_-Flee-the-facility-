@@ -1,0 +1,376 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Flee The Facility – Thông Tin & Hướng Dẫn</title>
+<link rel="icon" href="assets/img/favicon.png">
+
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="codefinal.css" />
+
+
+  <meta name="description" content="Flee The Facility - tổng quan, nhân vật, cơ chế, map, tips và hình ảnh minh họa." />
+</head>
+
+
+<body>
+  <!-- NAV / HEADER -->
+  <header class="w3-top">
+    <div class="w3-bar w3-black w3-padding-small w3-card-4">
+      <a href="#home" class="w3-bar-item w3-button nav-link w3-large">FLEE THE FACILITY</a>
+
+
+      <div class="w3-right w3-hide-small">
+        <a href="#dev" class="w3-bar-item w3-button nav-link">Nhà phát triển</a>
+        <a href="#chars" class="w3-bar-item w3-button nav-link">Nhân vật</a>
+        <a href="#mechanics" class="w3-bar-item w3-button nav-link">Cơ chế</a>
+        <a href="#gallery" class="w3-bar-item w3-button nav-link">Gallery</a>
+        <a href="#tips" class="w3-bar-item w3-button nav-link">Đánh giá & Tips</a>
+        <a href="#contact" class="w3-bar-item w3-button nav-link">Contact</a>
+      </div>
+
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="toggleMenu()">☰</a>
+    </div>
+
+
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="w3-black w3-hide w3-hide-large w3-hide-medium w3-card-4">
+      <a href="#dev" class="w3-bar-item w3-button nav-link">Nhà phát triển</a>
+      <a href="#chars" class="w3-bar-item w3-button nav-link">Nhân vật</a>
+      <a href="#mechanics" class="w3-bar-item w3-button nav-link">Cơ chế</a>
+      <a href="#gallery" class="w3-bar-item w3-button nav-link">Gallery</a>
+      <a href="#tips" class="w3-bar-item w3-button nav-link">Đánh giá & Tips</a>
+      <a href="#contact" class="w3-bar-item w3-button nav-link">Contact</a>
+    </div>
+  </header>
+
+
+  <main class="content-wrap w3-padding-64" id="home" style="margin-top:60px;">
+    <!-- HERO -->
+    <section class="w3-center section-card">
+      <h1 class="title">FLEE THE FACILITY</h1>
+      <p class="subtitle">Một trải nghiệm multiplayer trên Roblox - lấy cảm hứng từ tựa game "Dead By Daylight".</p>
+      <p class="lead">
+        Lối chơi: tối đa 4 Survivors vs 1 Beast. Survivors hack máy tính để mở Exit,
+        Beast bắt và nhốt Survivors vào Freeze Pod.
+      </p>
+    </section>
+
+
+<section class="section-card">
+  <h2>GIỚI THIỆU WEBSITE</h2>
+  <p>Website được xây dựng nhằm mục đích giới thiệu tựa game nổi tiếng, Flee the Facility. Đây là một trong những game sinh tồn thành công nhất trên Roblox, với hơn 5 tỉ lượt chơi và hơn 9 triệu lượt yêu thích. Trò chơi từng đạt đỉnh ~82.000 người chơi cùng lúc, giữ vững sức hút ổn định suốt nhiều năm kể từ khi ra mắt. Rating luôn trên 90%, cho thấy cộng đồng đánh giá rất cao chất lượng game. </p>
+</section>
+
+
+    <!-- DEV INFO -->
+    <section id="dev" class="section-card">
+      <h2>MỤC 1: NHÀ PHÁT TRIỂN</h2>
+
+
+      <dl>
+        <dt><strong>Tên game</strong></dt>
+        <dd>Flee the Facility</dd>
+
+
+        <dt><strong>Nhà phát triển</strong></dt>
+        <dd>A.W. Apps</dd>
+
+
+        <dt><strong>Đóng góp nổi bật</strong></dt>
+        <dd>magicmage12345 — Nhà thiết kế búa (Hammer Designer)</dd>
+
+
+        <dt><strong>Hình đại diện game</strong></dt>
+        <dd>
+          <img
+            src="https://tr.rbxcdn.com/180DAY-c82f6ad34416fb175efdfc6f75b08933/768/432/Image/Webp/noFilter"
+            alt="A.W. Apps / hammer designer"
+            class="w3-image thumb"
+            onclick="openModal(this.src)"
+          >
+        </dd>
+      </dl>
+    </section>
+
+
+    <!-- CHARACTERS -->
+    <section id="chars" class="section-card">
+      <h2>MỤC 2: NHÂN VẬT</h2>
+
+
+      <!-- Survivors -->
+      <article class="w3-row">
+        <div class="w3-col m6 s12">
+          <h3 class="blue">🟦 Survivors - Người sống sót</h3>
+          <ul>
+            <li><strong>Mục tiêu:</strong> Hack đủ số máy tính, mở cửa thoát và chạy trước khi bị Beast bắt.</li>
+            <li><strong>Khởi đầu:</strong> 15 giây head-start trước khi Beast xuất hiện.</li>
+            <li><strong>Số máy cần hack:</strong> 3-5 (tuỳ số người chơi).</li>
+
+
+            <li><strong>Khả năng:</strong>
+              <ul>
+                <li>Crawl (⇧ Shift) để bò qua khe nhỏ.</li>
+                <li>Jump không bị chậm, Beast bị hạn chế khi nhảy.</li>
+                <li>Slam door để chặn Beast vài giây.</li>
+                <li>Nhấn E để cứu đồng đội khỏi Freeze Pod.</li>
+              </ul>
+            </li>
+
+
+            <li>
+              <strong>Cảnh báo khi Beast gần:</strong> màn hình sáng (màu gemstone), nhạc horror & tiếng tim đập.
+            </li>
+
+
+            <li>
+              <strong>XP thưởng:</strong> Thoát +300 XP, Cứu +100 XP, Hack +50 XP → tối đa ~700 XP.
+            </li>
+          </ul>
+        </div>
+
+
+        <div class="w3-col m6 s12">
+          <figure>
+            <img
+              src="https://i.redd.it/yieocxxt699b1.png"
+              alt="Survivor"
+              class="w3-image thumb"
+              onclick="openModal(this.src)"
+            >
+            <figcaption class="caption">Survivor đang hack máy tính - minh họa.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+
+      <hr>
+
+
+      <!-- Beast -->
+      <article class="w3-row">
+        <div class="w3-col m6 s12">
+          <h3 class="red">🟥 Beast - Kẻ săn đuổi</h3>
+          <ul>
+            <li><strong>Mục tiêu:</strong> Bắt toàn bộ Survivors và nhốt vào Freeze Pod.</li>
+            <li><strong>Khởi đầu:</strong> Spawn trong Beast Cave sau 15 giây.</li>
+            <li><strong>Chọn 1 ability:</strong> Runner / Seer / Stalker.</li>
+            <li><strong>Khả năng:</strong> Đánh bằng hammer, rope kéo nạn nhân tới Freeze Pod.</li>
+            <li><strong>Hạn chế:</strong> góc nhìn 1st-person, nhảy bị chậm, không chui vents.</li>
+            <li><strong>XP thưởng:</strong> Đông 1 Survivor +200 XP, tối đa ~800 XP.</li>
+          </ul>
+        </div>
+
+
+        <div class="w3-col m6 s12">
+          <figure>
+            <img
+              src="https://i.ytimg.com/vi/5kQpEHiyiMQ/hq720.jpg"
+              onclick="openModal(this.src)"
+              style="width:100%; max-height:250px; object-fit:cover;"
+            >
+            <figcaption class="caption">Beast đang rượt đuổi - minh họa.</figcaption>
+          </figure>
+        </div>
+      </article>
+    </section>
+
+
+    <!-- MECHANICS -->
+    <section id="mechanics" class="section-card">
+      <h2>MỤC 3: TỔNG QUAN TRÒ CHƠI & CƠ CHẾ</h2>
+
+
+      <h4>Cơ chế Hacking</h4>
+      <ol>
+        <li>Nhấn <strong>E</strong> tại máy tính để bắt đầu hack.</li>
+        <li>Quan sát thanh tiến trình.</li>
+        <li>Khi xuất hiện vòng đỏ → bấm <strong>E</strong> đúng lúc.</li>
+        <li>Fail → máy phát âm XP error, Beast biết vị trí.</li>
+      </ol>
+
+
+      <p><strong>Màu màn hình máy tính:</strong></p>
+      <ul>
+        <li><span class="dot blue-dot"></span> Xanh: chưa hack</li>
+        <li><span class="dot red-dot"></span> Đỏ: fail skillcheck</li>
+        <li><span class="dot green-dot"></span> Xanh lá: hack hoàn tất</li>
+      </ul>
+
+
+      <figure>
+        <img
+          src="https://i.ytimg.com/vi/7aI0EDSJhik/hq720.jpg"
+          class="w3-image thumb"
+          onclick="openModal(this.src)"
+        >
+        <figcaption class="caption">Ví dụ hack sai: màn hình đỏ.</figcaption>
+      </figure>
+
+
+      <h4>🚪 Cửa thoát (Exit Doors)</h4>
+      <p>Khi đủ máy được hack → cửa xuất hiện. Nhấn E để mở. Âm rất to → Beast nghe thấy.</p>
+
+
+      <figure>
+        <img
+          src="https://www.quotev.com/quizi/11624127/0/1547958859"
+          class="w3-image thumb"
+        >
+        <figcaption class="caption">Exit Doors</figcaption>
+      </figure>
+
+
+      <h4>🗺️ Bản đồ (Maps)</h4>
+      <ul class="map-list">
+        <li>Facility_0</li>
+        <li>Homestead</li>
+        <li>Airport</li>
+        <li>Abandoned Facility</li>
+        <li>Library</li>
+        <li>School</li>
+        <li>Haunted Mansion</li>
+      </ul>
+
+
+      <h4>🏛️ Lobby & Vòng chơi</h4>
+      <p>Lobby 30s chuẩn bị, vòng ~15 phút, kết thúc hiện XP.</p>
+
+
+      <h4>🧊 Freeze Pod</h4>
+      <p>Beast knock → kéo → nhốt. Survivor mất máu dần; đồng đội có thể giải cứu.</p>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section-card">
+      <h2>🖼️ GALLERY - Hình ảnh minh họa</h2>
+
+
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-col m4 s12">
+          <img src="https://tr.rbxcdn.com/180DAY-c82f6ad34416fb175efdfc6f75b08933/768/432/Image/Webp/noFilter" class="w3-image thumb">
+        </div>
+        <div class="w3-col m4 s12">
+          <img src="https://quizizz.com/media/resource/gs/quizizz-media/quizzes/162ee679-fd4a-45dd-852d-f4bc90b02e46" class="w3-image thumb">
+        </div>
+        <div class="w3-col m4 s12">
+          <img src="https://cdna.artstation.com/p/assets/images/images/056/415/648/large/tn3rd-ftf-fan-art.jpg?1669191852" class="w3-image thumb">
+        </div>
+      </div>
+
+
+      <p class="muted">Chiêm ngưỡng đồ họa game</p>
+    </section>
+
+
+    <!-- TIPS & REVIEW -->
+    <section id="tips" class="section-card">
+      <h2>MỤC 4: ĐÁNH GIÁ & MẸO</h2>
+
+
+      <h4>Điểm cộng</h4>
+      <ul>
+        <li>Gameplay cân bằng, kịch tính.</li>
+        <li>Cơ chế pursuit gây nghiện.</li>
+        <li>Nhiều cosmetics & XP/credits.</li>
+      </ul>
+
+
+      <h4>Điểm trừ</h4>
+      <ul>
+        <li>Vòng dài 10-15 phút.</li>
+        <li>Beast nhiều hạn chế cho người mới.</li>
+        <li>Camping gây tranh cãi; map Facility_0 cũ & lag.</li>
+      </ul>
+
+
+      <h4>Mẹo cho người mới bắt đầu</h4>
+      <div class="w3-row">
+        <div class="w3-col m6 s12">
+          <h5>Survivor</h5>
+          <ul>
+            <li>Hack theo nhóm 2-3.</li>
+            <li>Dùng vents + slam door.</li>
+            <li>Cứu team khi an toàn.</li>
+          </ul>
+        </div>
+
+
+        <div class="w3-col m6 s12">
+          <h5>Beast</h5>
+          <ul>
+            <li>Dùng Runner hợp lý.</li>
+            <li>Kiểm soát khu vực nhiều máy.</li>
+            <li>Không camp sát Pod.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-card">
+      <h2>📩 CONTACT - Liên hệ / Góp ý</h2>
+
+
+      <form id="bookingForm" class="w3-container" onsubmit="return fakeSubmit(event)">
+        <label>Họ tên</label>
+        <input id="name" class="w3-input w3-black w3-border-red" type="text" required>
+
+
+        <label>Email</label>
+        <input id="email" class="w3-input w3-black w3-border-red" type="email" required>
+
+
+        <label>Nội dung</label>
+        <textarea id="message" class="w3-input w3-black w3-border-red" rows="4" required></textarea>
+
+
+        <button type="submit" class="button" style="margin-top:12px;">Gửi</button>
+      </form>
+
+
+      <div id="bookingResult" style="display:none; margin-top:12px;"></div>
+    </section>
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="w3-center w3-padding-24">
+    <p>© 2025 | Flee The Facility Info Website | Nội dung tham khảo & minh họa cho bài tin học</p>
+  </footer>
+
+
+  <!-- IMAGE MODAL -->
+  <div id="imgModal" class="w3-modal" style="display:none;" onclick="closeModal()">
+    <div class="w3-modal-content w3-animate-zoom w3-black" style="max-width:900px;">
+      <span class="w3-button w3-display-topright w3-large" onclick="closeModal()">×</span>
+
+
+      <img id="modalImg" src="" style="width:100%; height:auto; display:block;">
+
+
+      <div class="w3-container w3-center w3-padding-small">
+        <p class="caption">Click hoặc nhấn × để đóng</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="codefinal.js"></script>
+</body>
+</html>
+
+
+
