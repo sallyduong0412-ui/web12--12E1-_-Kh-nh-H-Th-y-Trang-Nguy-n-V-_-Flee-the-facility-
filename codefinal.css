@@ -1,7 +1,4 @@
-/* style.css */
 
-
-/* Global layout */
 :root {
   --accent: #ff1a1a;
   --bg: #000;
@@ -23,8 +20,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-
-/* Content wrapper */
 .content-wrap {
   max-width: 1100px;
   margin: 0 auto;
@@ -32,8 +27,6 @@ body {
   padding-right: 16px;
 }
 
-
-/* Title */
 .title {
   color: var(--accent);
   font-size: 2.1rem;
@@ -41,8 +34,6 @@ body {
   text-shadow: 0 0 12px rgba(255, 26, 26, 0.47);
 }
 
-
-/* Section card */
 .section-card {
   background: #111;
   border: 2px solid #330000;
@@ -52,19 +43,14 @@ body {
   box-shadow: 0 0 25px rgba(255, 0, 0, 0.06);
 }
 
-
 .section-card h2 {
   color: var(--accent);
   margin-top: 0;
 }
 
-
-/* Colors */
 .red { color: #ff8080; }
 .blue { color: #66b2ff; }
 
-
-/* Thumbnails */
 .thumb {
   width: 100%;
   border-radius: 8px;
@@ -73,15 +59,12 @@ body {
   box-shadow: 0 0 18px rgba(255, 0, 0, 0.12);
 }
 
-
 .caption {
   color: var(--muted);
   font-size: 0.9rem;
   margin-top: 6px;
 }
 
-
-/* Status dots */
 .dot {
   display: inline-block;
   width: 12px;
@@ -97,16 +80,12 @@ body {
 .red-dot { background: #ff3b3b; }
 .green-dot { background: #3bff6a; }
 
-
-/* Map list */
 .map-list {
   columns: 2;
   -webkit-columns: 2;
   column-gap: 24px;
 }
 
-
-/* Buttons */
 .button {
   display: inline-block;
   background: var(--accent);
@@ -120,30 +99,19 @@ body {
   letter-spacing: 1px;
   box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
 }
-
-
 .button:hover { transform: scale(1.03); }
 
-
-/* Responsive */
 @media (max-width: 800px) {
   .map-list { columns: 1; }
   .title { font-size: 1.6rem; }
 }
 
-
-/* Footer */
 footer {
   border-top: 1px solid #220000;
   color: var(--muted);
   margin-top: 24px;
 }
-
-
 .muted {
   color: var(--muted);
   font-size: 0.9rem;
 }
-
-
-

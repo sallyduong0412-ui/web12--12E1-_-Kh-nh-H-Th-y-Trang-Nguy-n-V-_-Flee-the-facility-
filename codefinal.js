@@ -1,7 +1,4 @@
-// main.js — vanilla JS for modal, fake submit, menu, smooth scroll
 
-
-// Modal open/close
 function openModal(src) {
   const modal = document.getElementById('imgModal');
   const img = document.getElementById('modalImg');
@@ -19,7 +16,6 @@ function closeModal() {
 }
 
 
-// Fake submit for contact form
 function fakeSubmit(e) {
   if (e && e.preventDefault) e.preventDefault();
 
@@ -40,8 +36,6 @@ function fakeSubmit(e) {
   return false;
 }
 
-
-// Prevent injection inside returned HTML
 function escapeHtml(text) {
   return text.replace(/[&<>"']/g, m => ({
     '&': '&amp;',
@@ -52,10 +46,6 @@ function escapeHtml(text) {
   }[m]));
 }
 
-
-
-
-// Smooth scroll
 document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.nav-link').forEach(a => {
     a.addEventListener('click', e => {
@@ -78,8 +68,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-// Mobile menu toggle
 function toggleMenu() {
   const mm = document.getElementById('mobileMenu');
   if (!mm) return;
@@ -89,8 +77,6 @@ function toggleMenu() {
   else mm.classList.add('w3-hide');
 }
 
-
-// Close modal when clicking outside image
 window.addEventListener('click', e => {
   const modal = document.getElementById('imgModal');
   if (!modal) return;
